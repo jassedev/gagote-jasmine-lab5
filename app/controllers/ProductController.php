@@ -25,7 +25,6 @@ class ProductController extends Controller
 
     public function create()
     {
-        // Check if the user is an admin
         $this->require_admin();
 
         if ($this->form_validation->submitted()) {
